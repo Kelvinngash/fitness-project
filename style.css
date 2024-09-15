@@ -1,0 +1,160 @@
+body{
+  background: linear-gradient(27deg, #89e4d8 60%, #0b8172 40%);
+  text-align: centre;
+}
+#container{
+  font-family:Arial,Sans-Serif;
+  transition: smooth;
+  font-size: 10px;
+  font-weight: 20000;
+  overflow: hidden;
+  width: 1450px;
+  margin: 20px;
+}
+h1 {
+    font-size: 40px;
+    text-align: center;
+    animation: flow 10s linear infinite;
+}
+h2 {
+    font-size: 15px;
+    text-align: center;
+    font-style: italic;
+    }
+
+@keyframes flow {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-120%); }
+}
+#navbar {
+    background-color: #333;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+}
+
+#navbar a {
+    float: center;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+#navbar-toggle {
+    display: none;
+    cursor: pointer;
+    color: white;
+}
+#home{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin: 20px;
+  padding-bottom: 5px;
+}
+#about{
+  width: 50%;
+  border: 1px none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+#gymImage{
+  border-radius: 10%;
+}
+#signUp{
+  padding: 10px;
+  margin: 10px;
+  border: none;
+}
+#sigup{
+  font-family: ariel;
+  font-weight: 300;
+  font-size: 20px;
+  background-color: blue;
+  color
+  width: 80px;
+  height: 30px;
+}
+#email{
+  color: skyblue;
+  border: 1px solid #60bfe6;
+  background-color: transparent;
+  font-weight: 1000;
+  height: 30px;
+  width: 40%;
+}
+#stats{
+          background-color: #341dbd;
+          color: #1d8bbd;
+          display: flex;
+          justify-content: space-evenly;
+          height: 5%;
+          margin: auto;
+          padding: 20px;
+          width: 70%;
+          border-style: double;
+          border-radius: 10%;
+          border-width: 10px;
+           box-shadow: -10px -10px 15px rgba(255,255,255,0.7),10px 10px 15px rgba(0,0,0,0.8);
+        } 
+#stat{
+          margin: 5px;
+          width: 20%;
+          border-right: solid;
+          border-width: 3px;
+          font-style: italic;
+          font-weight: bold;
+          font-size: 25px;
+          border-radius: 10%;
+        }
+           #services{
+         display: grid;
+         grid-template-columns: repeat(4, 2fr);
+         gap: 20px;
+         padding: 20px;
+         text-align: center;
+         margin: auto;
+        
+        }  
+        #service{
+          margin: 25px;
+          padding: 5px;
+          background-color: #2971dd;
+          text-align: center;
+          border-radius: 10%;
+          color: #0e2ebe;
+           box-shadow: -10px -10px 15px rgba(255,255,255,0.7),10px 10px 15px rgba(0,0,0,0.8);
+        }
+        
+@media screen and (max-width: 600px) {
+    #navbar a {
+      display: block; 
+      float: left;
+    }
+    #navbar-toggle { display: block; }
+    #container{
+      width: 600px;
+    }
+    #home{
+      display: flex;
+      justify-content: space-evenly;
+    }
+    #email{
+      width: 200px;
+    }
+    #stat{
+      font-size: 10px;
+      width: 40;
+    }
+     #services{
+         display: grid;
+         grid-template-columns: repeat(4, 2fr);
+         gap: 20px;
+         padding: 20px;
+         text-align: center;
+         margin-left: 100px;
+        
+        }  
+}
